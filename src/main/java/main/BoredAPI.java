@@ -7,7 +7,8 @@ import java.net.URL;
 import java.util.Scanner;
 public class BoredAPI {
 
-    private String spec = "http://www.boredapi.com/api/activity/";
+    //Source: https://www.boredapi.com/documentation
+    private final String spec = "http://www.boredapi.com/api/activity/";
 
     public String callAPI() throws IOException {
         //Create a URL object and pass the spec to parameter
