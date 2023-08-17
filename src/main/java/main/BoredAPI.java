@@ -38,4 +38,12 @@ public class BoredAPI {
         //Deserialize a jsonResp into the Activity Java class
         return gson.fromJson(jsonResp, Activity.class);
     }
+
+    public String toJSON(Activity activity) {
+        //Creating a Gson object
+        Gson gson = new Gson();
+
+        //Converting an Activity object into JSON format
+        return gson.toJson(activity);
+    }
 }
